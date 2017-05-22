@@ -11,8 +11,19 @@
     tools:context="com.example.hp.launch.MainActivity">
 
     <Button
+        android:id="@+id/LaunchMap"
+        android:layout_width="170dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginLeft="100dp"
+        android:layout_height="50dp"
+        android:text="Launch Map"
+        android:onClick="process"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
         android:id="@+id/LaunchMarket"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="100dp"
         android:layout_width="170dp"
         android:layout_height="50dp"
@@ -23,26 +34,14 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/LaunchMap"
-        android:layout_width="170dp"
-        android:orientation="vertical"
-        android:layout_marginTop="111dp"
-        android:layout_marginLeft="100dp"
-        android:layout_height="50dp"
-        android:text="Launch Map"
-        android:onClick="process"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
         android:id="@+id/SendEmail"
         android:layout_width="170dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:layout_marginLeft="100dp"
         android:onClick="process"
         android:layout_height="48dp"
         android:text="Send Email"
         android:orientation="vertical"
         android:layout_below="@+id/LaunchMap"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/LaunchMap" />
 </RelativeLayout>
